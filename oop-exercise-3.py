@@ -29,9 +29,3 @@ class Turtle:
 
     def get_position(self):
         return self.x, self.y
-
-
-myturtle = Turtle(3, 3)
-myturtle.move_left(5)
-myturtle.move_up(5)
-print(myturtle.get_position())
