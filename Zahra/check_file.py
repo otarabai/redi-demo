@@ -13,5 +13,6 @@ def move_right(self, steps):
         final_position = 10
     self.x = final_position
 
-#ctrl+t
+#ctrl+t  pull
 #ctrl+k
+#ctrl+shift+k  push
