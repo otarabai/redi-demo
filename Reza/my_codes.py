@@ -109,6 +109,17 @@ print(myturtle.get_position())
 
 
 
+class Todo_list:
+    def __init__(self, items=['todo']):
+        self.items = items
+    def add_item(self, description):
+        x = description
+        (self.items).append('x')
+
+    def mark_item_as_done(self, item_number):
+        done_list = []
+
+
 
 
 
