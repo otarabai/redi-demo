@@ -1,11 +1,11 @@
 import mvg_api as mvg
+import pprint
 
 
 
 
-'''
 
-for i in range (1,10):
+'''for i in range (1,10):
 
         mvg_stations = {}
         station_data = mvg.get_stations(i)
@@ -21,8 +21,8 @@ for i in range (1,10):
                 index += 1
 
         '''
-'''
-route = mvg.get_route(1, 3)
+
+'''route = mvg.get_route(1, 3)
 #print((route))
 
 index = 0
@@ -31,8 +31,8 @@ while index < len(route):
         print(key,index,route[index][key])
     index += 1
 
-#print(route[8]['ringFrom'])
-'''
+print(route[8]['ringFrom'])'''
+
 
 station_from = input("Enter Origin : ")
 station_data_from = mvg.get_stations(station_from)  #'Karlsplatz (Stachus)' Isartor Marienplatz
@@ -41,17 +41,17 @@ station_to = input("Enter Destination : ")
 station_data_to = mvg.get_stations(station_to)  # Feldmoching   Frankfurter Ring Scheidplatz
 station_id_to = station_data_to[0]['id']
 
-#print (station_id_from)
-#print (station_id_to)
+print (station_id_from)
+print (station_id_to)
 route_data = mvg.get_route(station_id_from, station_id_to)
 
-#print(route_data[0]['ringFrom'])
+print(route_data[0]['ringFrom'])
 #print(route_data[0]['ringTo'])
 print (route_data)
 
 print('You have to travel from Ring: ' + str(route_data[0]['ringFrom']) + ' to Ring: ' + str(route_data[0]['ringTo']))
-
 '''
+
 new_list_stations = []
 idss = mvg.get_stations('')
 for station in idss:
@@ -65,9 +65,9 @@ for station in idss:
 
 start_station = 1110
 for station in new_list_stations:
-    mvg.get_route(start_station,station['id'])
+    mvg.get_route(start_station,station['id'])'''
 
-'''
+
 
 
 
