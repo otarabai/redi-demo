@@ -1,0 +1,11 @@
+use case 1 get all stations and rings
+
+1.copy the dictionary
+2.iterate through station ids
+3.call get route from Karlsplatz id to station id
+4.save to result dictionary
+
+use case 2 get ring from station name
+
+1 get id for station name
+2.call get route and return the destination ring
