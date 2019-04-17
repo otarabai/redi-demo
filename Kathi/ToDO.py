@@ -11,14 +11,12 @@ class ToDo:
         self.item_number = item_number
         self.description = description
 
+list ={}
+
     def add_item(self,description):
+        x = input("Add your to do!")
+        list.append(x /n)
+        return list
 
-
-    def mark_item_as_done(self,item_number):
-
-
-    def delete_item(self, item_number):
-
-
-    def list_items(self,show_done):
+print(list)
 
