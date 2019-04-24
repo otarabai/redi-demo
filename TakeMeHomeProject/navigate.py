@@ -12,10 +12,10 @@ def convert_from_epoch(epoch_time):
 
 def navigate_between(source_name, destination_name):
     starting_destination_id = get_id_of_station(source_name)
-    print(starting_destination_id)
+    #print(starting_destination_id)
 
     destination_station_id = get_id_of_station(destination_name)
-    print(destination_station_id)
+   #print(destination_station_id)
 
     return mvg_api.get_route(starting_destination_id, destination_station_id)
 

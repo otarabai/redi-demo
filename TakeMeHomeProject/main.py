@@ -11,11 +11,13 @@ first_route = routes[0]
 departure_platform = first_route['connectionPartList'][0]['departurePlatform']
 richtung = first_route['connectionPartList'][0]['destination']
 
-print(navigate.convert_from_epoch(first_route['departure'])/n)
+print(navigate.convert_from_epoch(first_route['departure']))
 print(navigate.convert_from_epoch(first_route['arrival']))
+print()
 print("rings change : " + str(first_route['ringFrom']) + ' to ' + str(first_route['ringTo']))
+print()
 print("Zug from platform " + departure_platform + " in the direction of " + richtung)
-
+print()
 tickets = first_route['tickets']
 
 for ticket in tickets:
