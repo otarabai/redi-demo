@@ -19,3 +19,6 @@ def navigate_between(source_name, destination_name):
 
     return mvg_api.get_route(starting_destination_id, destination_station_id)
 
+def closest_station( lat, lon):
+    nearest_stations=mvg_api.get_nearby_stations(lat,lon )
+    return nearest_stations[0]['name']

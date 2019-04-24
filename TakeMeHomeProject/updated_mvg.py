@@ -1,5 +1,4 @@
-import navigate
-from pprint import pprint
+import TakeMeHomeProject.navigate as navigate
 import googlemaps
 import mvg_api
 
@@ -16,7 +15,7 @@ print("The closest station is: ", nearby_stations[0]['name'])
 
 ### TODO use the method  closest_station( lat, lon):
 
-starting_destination_name= nearest_stations[0]['name']
+starting_destination_name= navigate.closest_station(my_location['lat'], my_location['lng'])
 final_destination_name = input("enter name of station (destination name)")
 #final_station_id = navigate.get_id_of_station(final_destination)
 
