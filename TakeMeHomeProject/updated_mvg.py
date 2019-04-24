@@ -8,14 +8,15 @@ import mvg_api
 #starting_station_id = navigate.get_id_of_station(starting_destination_name)
 #departures = navigate.get_departure(station_name)
 
-gmaps = googlemaps.Client(key='AIzaSyDJ-s_kYjvu_g9VCQ8FuW0H2bQFTDUoc9U')
-my_location = gmaps.geolocate()['location']
-nearby_stations = mvg_api.get_nearby_stations(my_location['lat'], my_location['lng'])
-print("The closest station is: ", nearby_stations[0]['name'])
+def get_station_from_google():
+    gmaps = googlemaps.Client(key='AIzaSyDJ-s_kYjvu_g9VCQ8FuW0H2bQFTDUoc9U')
+    my_location = gmaps.geolocate()['location']
+    nearby_stations = mvg_api.get_nearby_stations(my_location['lat'], my_location['lng'])
+    return navigate.closest_station(my_location['lat'], my_location['lng'])
 
 ### TODO use the method  closest_station( lat, lon):
 
-starting_destination_name= navigate.closest_station(my_location['lat'], my_location['lng'])
+starting_destination_name= get_station_from_google()
 final_destination_name = input("enter name of station (destination name)")
 #final_station_id = navigate.get_id_of_station(final_destination)
 

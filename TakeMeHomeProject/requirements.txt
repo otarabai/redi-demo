@@ -1,1 +1,6 @@
 mvg-api
+
+wrap up the Google Map
+get location function
+navigate with the changes in between
+navigate to the destination address
